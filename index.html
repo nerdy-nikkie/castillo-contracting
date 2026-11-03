@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Castillo Contracting- For all your home repair and maintenance needs</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" src="assets/img/avataaars.jpeg" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+    </head>
+    <body id="page-top">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
+            <div class="container">
+                <a class="navbar-brand" href="#page-top">portfolio</a>
+                <button class="navbar-toggler text-uppercase font-weight-bold bg-primary text-white rounded" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+                    Menu
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarResponsive">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#reviews">Reviews</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#portfolio">Portfolio</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#about">About</a></li>
+                        <li class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- Masthead-->
+        <header class="masthead text-center">
+            <div class="container d-flex align-items-center flex-column">
+                <!-- Masthead Avatar Image-->
+                <img class="masthead-avatar mb-5" src="assets/img/avataaars.jpeg" alt="..." />
+                <!-- Masthead Heading-->
+                <h1 class="masthead-heading text-uppercase text-secondary mb-0">Nico Castillo</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Masthead Subheading-->
+                <p class="masthead-subheading font-weight-light mb-0">Engineer-Designer-Developer</p>
+            </div>
+        </header>
+        <!-- Reviews Section-->
+<section class="page-section bg-primary text-white mb-0" id="reviews">
+    <div class="container">
+        <!-- Reviews Section Heading-->
+        <h2 class="page-section-heading text-center text-uppercase text-white">Reviews</h2>
+        <!-- Icon Divider-->
+        <div class="divider-custom divider-light">
+            <div class="divider-custom-line"></div>
+            <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+            <div class="divider-custom-line"></div>
+        </div>
+        
+        <!-- TaskRabbit Badge -->
+        <div class="text-center mb-4">
+            <span class="badge bg-light text-primary px-4 py-2">
+                <a href="https://www.taskrabbit.com/profile/nicocastillo/" target="_blank"><strong>TaskRabbit</strong> Verified Reviews</a>
+            </span>
+            <div class="mt-2">
+                <span class="me-2"><strong id="reviewCount">47</strong> reviews</span>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <i class="fas fa-star text-warning"></i>
+                <span class="ms-2"><strong>5.0</strong> out of 5</span>
+            </div>
+        </div>
+
+        <!-- Scrolling Reviews Container -->
+        <div class="row">
+            <div class="col-lg-8 mx-auto">
+                <div class="scroll-container">
+                    <div class="reviews-scroll" id="reviewsScroll">
+                        <!-- Reviews will be dynamically inserted here -->
+                    </div>
+                </div>
+                <p class="text-center mt-3 small">
+                    <em>Hover to pause scrolling</em>
+                </p>
+                
+                <!-- Call to Action Button -->
+                <div class="text-center mt-4">
+                    <a href="https://www.taskrabbit.com/profile/nicocastillo/" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="btn btn-light btn-lg">
+                        View Full Profile on TaskRabbit →
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<style>
+    /* Scroll Container - The Window */
+    .scroll-container {
+        height: 500px;
+        overflow: hidden;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        padding: 20px;
+    }
+    
+    /* Scrolling Animation */
+    .reviews-scroll {
+        animation: scroll 180s linear infinite;
+    }
+    
+    /* Pause on Hover */
+    .reviews-scroll:hover {
+        animation-play-state: paused;
+    }
+    
+    /* Animation Definition */
+    @keyframes scroll {
+        0% {
+            transform: translateY(0);
+        }
+        100% {
+            transform: translateY(-50%);
+        }
+    }
+    
+    /* Individual Review Card */
+    .review-card {
+        background: rgba(255, 255, 255, 0.1);
+        border-left: 4px solid #ffc107;
+        border-radius: 8px;
+        padding: 20px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease;
+    }
+    
+    .review-card:hover {
+        transform: translateX(5px);
+        background: rgba(255, 255, 255, 0.15);
+    }
+    
+    .review-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        margin-bottom: 15px;
+    }
+    
+    .reviewer-name {
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    
+    .review-stars {
+        color: #ffc107;
+        margin-bottom: 5px;
+    }
+    
+    .review-date {
+        font-size: 0.85rem;
+        opacity: 0.7;
+    }
+    
+    .verified-badge {
+        background: #ffc107;
+        color: #1e3a8a;
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.75rem;
+        font-weight: 600;
+    }
+    
+    .review-text {
+        line-height: 1.6;
+    }
+</style>
+
+
+
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Portfolio</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/3Dmodel.png" alt="..." />
+                        </div>
+                        <h2 class="text-center mt-3">3D Modeling</h2>
+                    </div>
+                    <!-- Portfolio Item 2 Web Development-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/ecom1.1.png" alt="..." />
+                        </div>
+                        <h2 class="text-center mt-3">Web Development</h2>
+                    </div>
+                    <!-- Portfolio Item 3 App Development-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/routed-rides.png" alt="..." />
+                        </div>
+                        <h2 class="text-center mt-3">App development</h2>
+                    </div>
+                    <!-- Portfolio Item 4 Electrical-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/electrical-cover.jpg" alt="..." />
+                        </div>
+                        <h2 class="text-center mt-3">Electrical</h2>
+                    </div>
+                
+                    <!-- Portfolio Item 5 Plumbing-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/bidet1.jpg" alt="..." />
+                        </div>
+                        <h2 class="text-center mt-3">Plumbing</h2>
+                    </div>
+                            
+                    <!-- Portfolio Item 6 Home Repair-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="assets/img/portfolio/Dresser-repair.jpg" alt="..." />
+                        </div>
+                        <h2 class="text-center mt-3">Home Repairs</h2>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about">
+            <div class="container">
+                <!-- About Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-white">About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row justify-content-center">
+
+                    <div class="col-lg-8 col-xl-7"><p class="lead" style="text-indent: 40px;">My name is Nico Castillo, and I've been working as a handyman since 2014, with over nine years of experience in electrical, plumbing, and general home repairs. I've taken on a wide range of projects such as fixing appliances, cabinets, doors, locks, faucets, and pipes always focusing on quality, efficiency, and professionalism. I have all my own tools and equipment, and I'm available as an independent contractor for any home or property maintenance needs.
+                   </br></br>
+                    </p>
+                   <p class="lead" style="text-indent: 40px;">
+                        In addition to my hands on experience, I'm also an engineer with a passion for combining technical work and programming to build practical solutions. I'm a self taught programmer skilled in Expo, React Native, HTML, and C++, with interests in robotics and artificial intelligence. My long-term goal is to use these skills to help advance renewable energy and sustainability.
+                    </br></br>
+                   </p>
+                   <p class="lead" style="text-indent: 40px;">
+                        I bring a unique blend of hands-on technical skills and programming expertise. With over eight years of experience in electrical, plumbing, and handyman work, I've developed a knack for solving problems quickly and effectively—whether that means crafting an immediate fix or developing a long-term solution. I believe practical problem-solving is essential, since overthinking can often delay progress and lead to significant costs in real-world projects.
+                    </br></br>
+                   </p>
+                   <p class="lead" style="text-indent: 40px;">
+                        In addition to programming, I am skilled in 3D modeling with Fusion 360 and have designed and prototyped my own creations. I enjoy identifying challenges, improving systems, and finding innovative ways to make things work better.
+                    </br></br>
+                   </p>
+                   <p class="lead" style="text-indent: 40px;">
+                        My goal is to continue growing as an engineer by securing an internship or joining a startup, where I can contribute my technical knowledge, hands-on experience, and problem-solving mindset to impactful projects.
+                    </p>
+                </div>
+                </div>
+                
+            </div>
+        </section>
+        <!-- Contact Section-->
+        <section class="page-section" id="contact">
+            <div class="container">
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0">Contact Me</h2>
+                <div class="divider-custom">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-7">
+                        <!-- WEB3FORMS - 100% FREE, NO CREDIT CARD -->
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="279f6467-5d4d-43f3-881b-d7a1e206b664">
+                            
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="text" name="name" placeholder="Enter your name..." required />
+                                <label for="name">Full name</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="email" name="email" placeholder="name@example.com" required />
+                                <label for="email">Email address</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <input class="form-control" type="tel" name="phone" placeholder="(123) 456-7890" required />
+                                <label for="phone">Phone number</label>
+                            </div>
+                            <div class="form-floating mb-3">
+                                <textarea class="form-control" name="message" placeholder="Enter your message here..." style="height: 10rem" required></textarea>
+                                <label for="message">Message</label>
+                            </div>
+                            
+                            <button class="btn btn-primary btn-xl" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer-->
+        <footer class="footer text-center">
+            <div class="container">
+                <div class="row">
+                    <!-- Footer Location-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Location</h4>
+                        <p class="lead mb-0">
+                            Chicago, IL
+                        </p>
+                    </div>
+                    <!-- Footer Social Icons-->
+                    <div class="col-lg-4 mb-5 mb-lg-0">
+                        <h4 class="text-uppercase mb-4">Around the Web</h4>
+                       <!--
+                        <a class="btn btn-outline-light btn-social mx-1" href=""><i class="fab fa-fw fa-facebook-f"></i></a>
+                        <a class="btn btn-outline-light btn-social mx-1" href="#!"><i class="fab fa-fw fa-twitter"></i></a>
+                    -->
+                        <a class="btn btn-outline-light btn-social mx-1" href="https://www.linkedin.com/in/nico-castillo-758aa9ba/"><i class="fab fa-fw fa-linkedin-in"></i></a>
+                    </div>
+                    <!-- Footer About Text
+                    <div class="col-lg-4">
+                        <h4 class="text-uppercase mb-4">About Freelancer</h4>
+                        <p class="lead mb-0">
+                            Freelance is a free to use, MIT licensed Bootstrap theme created by
+                            <a href="http://startbootstrap.com">Start Bootstrap</a>
+                            .
+                        </p>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </footer>
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white">
+            <div class="container"><small>Copyright Nico Castillo 2025</small></div>
+        </div>
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1 3D Modeling-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">3D Modeling</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image Carousel-->
+                                    <div id="portfolioCarousel1" class="carousel slide mb-5" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel1" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                        </div>
+                                        
+                                        <!-- Carousel Items -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/3Dmodel.png" alt="3D Model - view 1" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/chalkholder.png" alt="Chalkholder - view" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/split-chalkholder.png" alt="Chalkholder split - view" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/scrubby1.png" alt="scrubby1 - view" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/scrubby2.png" alt="scrubby2 - view 2" />
+                                            </div>  
+                                        </div>
+                                        
+                                        <!-- Carousel Controls -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel1" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">I have a passion for 3D modeling and I use it to create realistic and detailed models for my projects. Here is one of my models I made using fusion360 to make into an STL file and 3D print</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2 Web Development-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Web Development</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image Carousel-->
+                                    <div id="portfolioCarousel2" class="carousel slide mb-5" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="8" aria-label="Slide 9"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel2" data-bs-slide-to="9" aria-label="Slide 10"></button>
+                                        </div>
+                                        
+                                        <!-- Carousel Items -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/web1.png" alt="view 1" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/web2.png" alt="view 2" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/web3.png" alt="view 3" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/web-dash1.png" alt="view 4" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/web-fitness1.png" alt="view 5" />
+                                            </div>  
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/ecom1.png" alt="view 6" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/ecom2.png" alt="view 7" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/ecom3.png" alt="view 8" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/ecom4.png" alt="view 9" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/ecom5.png" alt="view 10" />
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Carousel Controls -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                           
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel2" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            
+                                        </button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">I’ve been developing my skills in web development, focusing on creating responsive and dynamic websites using HTML, CSS, and JavaScript. Recently, I’ve been expanding my knowledge by learning React Native for mobile app development and Ruby on Rails for backend integration. My goal is to build seamless, user friendly digital experiences that combine functionality with clean design.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+<!-- Portfolio Modal 3 App Development-->
+<div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body text-center pb-5">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-8">
+                            <!-- Portfolio Modal - Title-->
+                            <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Rideshare app - Routed Rides</h2>
+                            <!-- Icon Divider-->
+                            <div class="divider-custom">
+                                <div class="divider-custom-line"></div>
+                                <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                <div class="divider-custom-line"></div>
+                            </div>
+                            <!-- Portfolio Modal - Image Carousel-->
+                            <div id="portfolioCarousel3" class="carousel slide mb-5" data-bs-ride="carousel">
+                                <!-- Carousel Indicators -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel3" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                </div>
+                                
+                                <!-- Carousel Items -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/1.png" alt="Rideshare - view 1" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/2.png" alt="Rideshare - view 2" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/3.png" alt="Rideshare - view 3" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/4.png" alt="Rideshare - view 4" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/5.png" alt="Rideshare - view 5" />
+                                    </div>  
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/6.png" alt="Rideshare - view 6" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/7.png" alt="Rideshare - view 7" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/8.png" alt="Rideshare - view 8" />
+                                    </div>
+                                </div>
+                                
+                                <!-- Carousel Controls -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel3" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel3" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                            <!-- Portfolio Modal - Text-->
+                            <p class="mb-4">I developed a comprehensive rideshare application as a learning exercise to explore new programming technologies and expand my technical skill set. Through this project, I gained hands-on experience with React Native and Expo, enabling cross-platform deployment across iOS, Android, and web platforms from a single codebase. The development process provided valuable insights into API implementation with a strong emphasis on security best practices, while challenging me to navigate complex technical requirements and ultimately delivering a functional multi-platform solution that demonstrates my ability to adapt to new technologies and solve real-world development challenges.Retry</p>
+                            <button class="btn btn-primary" data-bs-dismiss="modal">
+                                <i class="fas fa-xmark fa-fw"></i>
+                                Close Window
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        <!-- Portfolio Modal 4 Electrical -->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Electrical</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image Carousel-->
+                                    <div id="portfolioCarousel4" class="carousel slide mb-5" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                        </div>
+                                        
+                                        <!-- Carousel Items -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/electrical1.JPG" alt="Electrical work - view 1" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/electrical2.JPG" alt="Electrical work - view 2" />
+                                            </div>
+                                        </div>
+                                        
+                                        <!-- Carousel Controls -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel4" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">At Castillo Contracting, we specialize in reliable home repair and electrical services. With over 8 years of experience in electrical work and low-voltage wiring, we’ve helped countless homeowners troubleshoot and fix their electrical issues quickly and safely. From small wiring projects to diagnosing and repairing common electrical problems, our goal is to provide honest, dependable service that keeps your home running smoothly.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5 Plumbing-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Plumbing</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image Carousel-->
+                            <div id="portfolioCarousel5" class="carousel slide mb-5" data-bs-ride="carousel">
+                                <!-- Carousel Indicators -->
+                                <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                    <!--
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                    <button type="button" data-bs-target="#portfolioCarousel5" data-bs-slide-to="7" aria-label="Slide 8"></button>
+                                -->
+                                </div>
+                                
+                                <!-- Carousel Items -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/bidet-install.jpg" alt="Bidet Install 1" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/bidet1.jpg" alt="Bidet install 2" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/shower-head.jpg" alt="Shower Head Install" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/faucet-install.jpg" alt="Faucet Install" />
+                                    </div>
+                                    <!--
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/5.png" alt="Rideshare - view 5" />
+                                    </div>  
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/6.png" alt="Rideshare - view 6" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/7.png" alt="Rideshare - view 7" />
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/8.png" alt="Rideshare - view 8" />
+                                    </div>
+                                -->
+                                </div>
+                                
+                                <!-- Carousel Controls -->
+                                <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel5" data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel5" data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Since 2014, Castillo Contracting has been providing trusted plumbing solutions for homeowners and businesses. With years of hands-on experience in routing, copper piping, and emergency pipe repair, we handle everything from minor leaks to major busted pipes. Our mission is to deliver fast, dependable, and high-quality work that keeps your water systems running right the first time.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6 Home Repair-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Home Repairs</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image Carousel-->
+                                    <div id="portfolioCarousel6" class="carousel slide mb-5" data-bs-ride="carousel">
+                                        <!-- Carousel Indicators -->
+                                        <div class="carousel-indicators">
+                                            <button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                            <!--
+                                            <button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="5" aria-label="Slide 6"></button>
+                                            <button type="button" data-bs-target="#portfolioCarousel6" data-bs-slide-to="6" aria-label="Slide 7"></button>
+                                        -->
+                                        </div>
+                                        
+                                        <!-- Carousel Items -->
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/Dresser-repair.jpg" alt="view 1" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/access-panel.jpg" alt="view 2" />
+                                            </div>
+                                           
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/bifold-doors.jpg" alt="view 3" />
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img class="img-fluid rounded d-block w-100 h-100" src="assets/img/portfolio/bifold-doors2.jpg" alt="view 4" />
+                                            </div>  
+                                            
+                                        </div>
+                                        
+                                        <!-- Carousel Controls -->
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#portfolioCarousel6" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                           
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#portfolioCarousel6" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            
+                                        </button>
+                                    </div>
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">Here, I have documented the various repairs and fixes I have completed for customers. I genuinely enjoy fixing and repairing things. I believe that working on items such as electrical, plumbing, and carpentry provides me with valuable insights into what constitutes effective design and functionality, as well as identifying common poor designs. This experience helps me develop practical knowledge that can be applied to creating better, more reliable solutions in real-world applications.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close Window
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+        <!-- Reviews JS-->
+        <script src="js/reviews.js"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>
